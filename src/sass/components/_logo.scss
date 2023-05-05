@@ -1,5 +1,20 @@
-// .logo {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.logo__text {
+  margin-left: 12px;
+  font-family: 'Lexend';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: $logo-text;
+}
