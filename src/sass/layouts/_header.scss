@@ -1,5 +1,9 @@
 .header > .container {
+  position: relative;
   display: flex;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  z-index: 1;
 
   & .btn-secondary {
     margin-left: 54px;
@@ -10,15 +14,56 @@
 
 .nav-menu {
   display: flex;
+  width: 100%;
 }
 
 .nav-menu__list {
   display: flex;
   gap: 24px;
+  margin-left: auto;
 }
 
 .nav-menu__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   padding: 8px 16px;
   border: 1px solid $nav-item-border;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $nav-item-text;
   background-color: $nav-item-bg;
+}
+
+.nav-menu__dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu__dropdown-item--hidden {
+  @extend .is-hidden;
+}
+
+.nav-menu__dropdown-arrow {
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 720px;
+  border-bottom-left-radius: 80px;
+  background-image: url('../images/bg-house-desk-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
