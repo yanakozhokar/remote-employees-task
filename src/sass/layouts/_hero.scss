@@ -7,11 +7,17 @@
 }
 
 .hero__title {
-  max-width: 496px;
-  font-weight: 600;
+  max-width: 361px;
+  font-weight: 700;
   font-size: 40px;
   line-height: 1.25;
   color: $title-color;
+}
+
+.hero__title-accent {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px $title-color;
 }
 
 .gradient-1 {

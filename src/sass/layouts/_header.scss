@@ -25,9 +25,11 @@
 }
 
 .nav-menu__list {
+  position: relative;
   display: flex;
   gap: 24px;
   margin-left: auto;
+  min-width: 344px;
 }
 
 .nav-menu__list-item {
@@ -44,10 +46,15 @@
   line-height: 1.28;
   color: $nav-item-text;
   background-color: $nav-item-bg;
+
+  &:has(.nav-menu__dropdown) {
+    position: absolute;
+    top: 6px;
+    right: 0;
+  }
 }
 
 .nav-menu__dropdown {
-  position: relative;
   display: inline-block;
 
   &:hover .nav-menu__dropdown-item {
