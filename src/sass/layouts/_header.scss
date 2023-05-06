@@ -1,7 +1,13 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .header > .container {
   position: relative;
   display: flex;
-
   padding-top: 46px;
   padding-bottom: 46px;
   z-index: 1;
@@ -64,41 +70,4 @@
   width: 18px;
   height: 18px;
   fill: currentColor;
-}
-
-.gradient-1 {
-  position: absolute;
-  top: -77px;
-  left: -173px;
-  width: 438px;
-  height: 494px;
-  background-color: #82f7ff;
-  opacity: 0.2;
-  filter: blur(60px);
-  transform: rotate(90deg);
-}
-
-.gradient-2 {
-  position: absolute;
-  top: -162px;
-  left: 74px;
-  width: 438px;
-  height: 494px;
-  background-color: #82ffd2;
-  opacity: 0.2;
-  filter: blur(60px);
-  transform: rotate(90deg);
-}
-
-.bg-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 720px;
-  border-bottom-left-radius: 80px;
-  background-image: url('../images/bg-house-desk-1x.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
 }
