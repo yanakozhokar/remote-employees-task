@@ -1,0 +1,44 @@
+.sell-carousel {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 528px;
+  height: 459px;
+}
+
+.carousel__first-slide-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 488px;
+  height: 416px;
+}
+
+.carousel__second-slide-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 296px;
+  height: 168px;
+}
+
+.carousel__third-slide-container {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 96px;
+  height: 80px;
+}
+
+.carousel__fourth-slide-container {
+  position: absolute;
+  bottom: 0;
+  right: 124px;
+  width: 96px;
+  height: 80px;
+}
+
+.sell-carousel__img {
+  width: 100%;
+  height: 100%;
+}
