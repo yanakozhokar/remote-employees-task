@@ -126,6 +126,8 @@
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
   width: 50%;
   border-bottom-left-radius: 80px;
   z-index: -1;
@@ -143,7 +145,7 @@
   display: flex; // для слайдера возможно убрать
 }
 
-.hero__rewiews-item {
+.hero__rewiews-card {
   display: flex;
   align-items: center;
   padding: 24px;
@@ -217,10 +219,15 @@
 .hero__rewiews-list {
   display: flex;
   overflow: hidden;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 96px); // -96px это паддинги слева и справа по 48px
 }
 
 .hero__rewiews-item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   flex: 0 0 calc(100% / 2);
   transition: transform 0.5s ease;
 }
