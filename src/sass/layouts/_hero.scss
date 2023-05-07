@@ -139,7 +139,7 @@
 .hero__rewiews-list {
   position: absolute;
   bottom: 38px;
-  left: 48px;
+  // left: 48px;
   display: flex; // для слайдера возможно убрать
 }
 
@@ -212,4 +212,15 @@
   font-size: 12px;
   line-height: 1.67;
   color: $hero-rewiews-text;
+}
+
+.hero__rewiews-list {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero__rewiews-item {
+  flex: 0 0 calc(100% / 2);
+  transition: transform 0.5s ease;
 }
