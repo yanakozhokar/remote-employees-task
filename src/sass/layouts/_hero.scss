@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 320px;
+  padding-top: 180px;
 }
 
 .hero > .container {
@@ -137,6 +137,7 @@
   position: absolute;
   bottom: 38px;
   left: 48px;
+  display: flex; // для слайдера возможно убрать
 }
 
 .hero__rewiews-item {
@@ -145,6 +146,10 @@
   padding: 24px;
   border-radius: 32px;
   background-color: $hero-rewiews-bg;
+
+  &:has(.hero__rewiews-avatars-list) {
+    width: 328px;
+  }
 }
 
 .hero__rewiews-avatars-list {
@@ -178,9 +183,18 @@
   height: 100%;
 }
 
+.hero__rewiews-img-container {
+  width: 56px;
+  height: 56px;
+}
+
+.hero__rewiews-img {
+  width: 100%;
+  height: 100%;
+}
+
 .hero__rewiews-description {
   margin-left: 12px;
-  width: 152px;
   text-transform: capitalize;
 }
 
