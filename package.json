@@ -18,9 +18,7 @@
     "url": "https://yanakozhokar.github.io/remote-employees-task/issues"
   },
   "dependencies": {
-    "flickity": "^3.0.0",
-    "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
