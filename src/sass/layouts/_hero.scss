@@ -144,6 +144,15 @@
   bottom: 38px;
   // left: 48px;
   display: flex; // для слайдера возможно убрать
+  width: calc(100% - 96px); // -96px это паддинги слева и справа по 48px
+}
+
+.hero__rewiews-item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex: 0 0 calc(100% / 2);
+  transition: transform 0.5s ease;
 }
 
 .hero__rewiews-card {
@@ -215,20 +224,4 @@
   font-size: 12px;
   line-height: 1.67;
   color: $hero-rewiews-text;
-}
-
-.hero__rewiews-list {
-  display: flex;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  width: calc(100% - 96px); // -96px это паддинги слева и справа по 48px
-}
-
-.hero__rewiews-item {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  flex: 0 0 calc(100% / 2);
-  transition: transform 0.5s ease;
 }
