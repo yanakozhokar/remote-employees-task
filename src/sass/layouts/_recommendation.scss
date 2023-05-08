@@ -21,16 +21,13 @@
 }
 
 .recommendation__slider-list {
-  display: flex;
-  gap: 40px;
   margin-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
   width: 100%;
 }
 
 .recommendation__slider-item {
   width: 340px;
+  margin-left: 40px;
 }
 
 .recommendation__slider-img-container {
