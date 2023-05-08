@@ -140,24 +140,17 @@
 }
 
 .hero__slider-list {
-  position: absolute;
+  position: absolute !important;
   bottom: 38px;
-  // left: 48px;
-  display: flex; // для слайдера возможно убрать
-  width: calc(100% - 96px); // -96px это паддинги слева и справа по 48px
+  left: 48px;
+  display: flex;
+  max-width: 720px;
 }
 
 .hero__slider-item {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  flex: 0 0 calc(100% / 2);
-  transition: transform 0.5s ease;
-}
-
-.hero__slider-card {
-  display: flex;
+  display: flex !important;
   align-items: center;
+  margin-left: 16px;
   padding: 24px;
   border-radius: 32px;
   background-color: $hero-slider-bg;
