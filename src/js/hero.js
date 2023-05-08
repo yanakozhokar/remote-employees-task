@@ -1,7 +1,5 @@
-const heroCarousel = document.querySelector('.hero__rewiews-list');
-const heroCarouselItems = Array.from(
-  document.querySelectorAll('.hero__rewiews-item')
-);
+const heroCarousel = document.querySelector('.hero__slider-list');
+const heroCarouselItems = [...document.querySelectorAll('.hero__slider-item')];
 
 let currentIndex = 0;
 let isAnimating = false;
@@ -50,9 +48,9 @@ autoPlay();
 
 //? Работает корректно, но прокрутка не вечная
 
-// const heroCarousel = document.querySelector('.hero__rewiews-list');
+// const heroCarousel = document.querySelector('.hero__slider-list');
 // const heroCarouselItems = Array.from(
-//   document.querySelectorAll('.hero__rewiews-item')
+//   document.querySelectorAll('.hero__slider-item')
 // );
 
 // let currentIndex = 0;
@@ -102,9 +100,9 @@ autoPlay();
 
 //? Прокрутка вечная, но после первой прокрутки все элементы идентичны
 
-// const heroCarousel = document.querySelector('.hero__rewiews-list');
+// const heroCarousel = document.querySelector('.hero__slider-list');
 // let heroCarouselItems = Array.from(
-//   document.querySelectorAll('.hero__rewiews-item')
+//   document.querySelectorAll('.hero__slider-item')
 // );
 
 // let currentIndex = 0;
@@ -113,7 +111,7 @@ autoPlay();
 
 // function updateCarouselItems() {
 //   heroCarouselItems = Array.from(
-//     document.querySelectorAll('.hero__rewiews-item')
+//     document.querySelectorAll('.hero__slider-item')
 //   );
 // }
 
@@ -170,9 +168,9 @@ autoPlay();
 
 //? Работает корректно, прокрутка вечная, но старые элементы не удаляются
 
-// const heroCarousel = document.querySelector('.hero__rewiews-list');
+// const heroCarousel = document.querySelector('.hero__slider-list');
 // let heroCarouselItems = Array.from(
-//   document.querySelectorAll('.hero__rewiews-item')
+//   document.querySelectorAll('.hero__slider-item')
 // );
 
 // let currentIndex = 0;
@@ -181,7 +179,7 @@ autoPlay();
 
 // function updateCarouselItems() {
 //   heroCarouselItems = Array.from(
-//     document.querySelectorAll('.hero__rewiews-item')
+//     document.querySelectorAll('.hero__slider-item')
 //   );
 // }
 

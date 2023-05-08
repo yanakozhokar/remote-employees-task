@@ -43,7 +43,7 @@
   background-color: $btn-arrow-secondary-bg;
 }
 
-.btn-filer-primary {
+.btn-filter-primary {
   @extend %btn;
   padding-left: 24px;
   padding-right: 24px;
@@ -52,11 +52,11 @@
   background-color: $btn-filter-primary-bg;
 }
 
-.btn-filer-secondary {
+.btn-filter-secondary {
   @extend %btn;
   padding-left: 24px;
   padding-right: 24px;
   color: $btn-filter-secondary-text;
-  border-color: $btn-filter-secondary-text;
+  border-color: $btn-filter-secondary-border;
   background-color: $btn-filter-secondary-bg;
 }

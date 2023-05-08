@@ -1,9 +1,210 @@
-<!-- <section class="recommendation section">
+<section class="recommendation section">
   <div class="container">
-    <div class="carousel">
-      <div class="carousel-item">Slide 1</div>
-      <div class="carousel-item">Slide 2</div>
-      <div class="carousel-item">Slide 3</div>
+    <div class="recommendation__top">
+      <div class="recommendation__title-container">
+        <h2 class="title">Our recommendation</h2>
+        <p class="subtitle">Featured House</p>
+      </div>
+      <ul class="recommendation__filter-list">
+        <li class="recommendation__filter-item">
+          <button class="recommendation__filter-btn btn-filter-primary">
+            <svg width="24" height="24" class="recommendation__filter-icon">
+              <use href="./images/icons.svg#icon-house"></use>
+            </svg>
+            House
+          </button>
+        </li>
+        <li class="recommendation__filter-item">
+          <button class="recommendation__filter-btn btn-filter-secondary">
+            <svg width="24" height="24" class="recommendation__filter-icon">
+              <use href="./images/icons.svg#icon-villa"></use>
+            </svg>
+            Villa
+          </button>
+        </li>
+        <li class="recommendation__filter-item">
+          <button class="recommendation__filter-btn btn-filter-secondary">
+            <svg width="24" height="24" class="recommendation__filter-icon">
+              <use href="./images/icons.svg#icon-apartment"></use>
+            </svg>
+            Apartment
+          </button>
+        </li>
+      </ul>
+      <div class="recommendation__controls">
+        <button class="recomendation__prev-btn btn-arrow-secondary">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="recommendation__next-btn btn-arrow-primary">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <ul class="recommendation__slider-list">
+      <li class="recommendation__slider-item">
+        <div class="recommendation__slider-img-container">
+          <img
+            src="./images/roseland-desk-1x.jpg"
+            alt="Roselands House"
+            width="340"
+            height="382"
+            class="recommendation__slider-img"
+          />
+          <div class="recommendation__slider-type--popular">
+            <svg
+              width="16"
+              height="16"
+              class="recommendation__slider-type-icon"
+            >
+              <use href="./images/icons.svg#icon-fire"></use>
+            </svg>
+            <p class="recommendation__slider-type-text">Popular</p>
+          </div>
+          <h3 class="recommendation__slider-title">Roselands House</h3>
+          <p class="recommendation__slider-price">$ 35.000.000</p>
+          <div class="recommendation__slider-person">
+            <div class="recommendation__slider-person-img-container">
+              <img
+                src="./images/dianne-russell-desk-1x.png"
+                alt="Dianne Russell"
+                width="40"
+                height="40"
+                class="recommendation__slider-person-img"
+              />
+            </div>
+            <div class="recommendation__slider-person-info">
+              <p class="recommendation__slider-person-name">Dianne Russell</p>
+              <p class="recommendation__slider-person-location">
+                Manchester, Kentucky
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="recommendation__slider-item">
+        <div class="recommendation__slider-img-container">
+          <img
+            src="./images/woodlandside-desk-1x.jpg"
+            alt="Woodlandside"
+            width="340"
+            height="382"
+            class="recommendation__slider-img"
+          />
+          <div class="recommendation__slider-type--new">
+            <svg
+              width="16"
+              height="16"
+              class="recommendation__slider-type-icon"
+            >
+              <use href="./images/icons.svg#icon-house"></use>
+            </svg>
+            <p class="recommendation__slider-type-text">New house</p>
+          </div>
+          <h3 class="recommendation__slider-title">Woodlandside</h3>
+          <p class="recommendation__slider-price">$ 20.000.000</p>
+          <div class="recommendation__slider-person">
+            <div class="recommendation__slider-person-img-container">
+              <img
+                src="./images/robert-fox-desk-1x.png"
+                alt="Robert Fox"
+                width="40"
+                height="40"
+                class="recommendation__slider-person-img"
+              />
+            </div>
+            <div class="recommendation__slider-person-info">
+              <p class="recommendation__slider-person-name">Robert Fox</p>
+              <p class="recommendation__slider-person-location">
+                Dr. San Jose, South Dakota
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="recommendation__slider-item">
+        <div class="recommendation__slider-img-container">
+          <img
+            src="./images/old-lighthouse-desk-1x.jpg"
+            alt="The Old Lighthouse"
+            width="340"
+            height="382"
+            class="recommendation__slider-img"
+          />
+          <div class="recommendation__slider-type--popular">
+            <svg
+              width="16"
+              height="16"
+              class="recommendation__slider-type-icon"
+            >
+              <use href="./images/icons.svg#icon-wallet"></use>
+            </svg>
+            <p class="recommendation__slider-type-text">Best Deals</p>
+          </div>
+          <h3 class="recommendation__slider-title">The Old Lighthouse</h3>
+          <p class="recommendation__slider-price">$ 44.000.000</p>
+          <div class="recommendation__slider-person">
+            <div class="recommendation__slider-person-img-container">
+              <img
+                src="./images/ronald-richards-desk-1x.png"
+                alt="Ronald Richards"
+                width="40"
+                height="40"
+                class="recommendation__slider-person-img"
+              />
+            </div>
+            <div class="recommendation__slider-person-info">
+              <p class="recommendation__slider-person-name">Ronald Richards</p>
+              <p class="recommendation__slider-person-location">
+                Santa Ana, Illinois
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="recommendation__slider-item">
+        <div class="recommendation__slider-img-container">
+          <img
+            src="./images/cosmo-desk-1x.jpg"
+            alt="Cosmo's House"
+            width="340"
+            height="382"
+            class="recommendation__slider-img"
+          />
+          <div class="recommendation__slider-type--popular">
+            <svg
+              width="16"
+              height="16"
+              class="recommendation__slider-type-icon"
+            >
+              <use href="./images/icons.svg#icon-fire"></use>
+            </svg>
+            <p class="recommendation__slider-type-text">Popular</p>
+          </div>
+          <h3 class="recommendation__slider-title">Cosmo's House</h3>
+          <p class="recommendation__slider-price">$ 22.000.000</p>
+          <div class="recommendation__slider-person">
+            <div class="recommendation__slider-person-img-container">
+              <img
+                src="./images/jenny-wilson-desk-1x.png"
+                alt="Jenny Wilson"
+                width="40"
+                height="40"
+                class="recommendation__slider-person-img"
+              />
+            </div>
+            <div class="recommendation__slider-person-info">
+              <p class="recommendation__slider-person-name">Jenny Wilson</p>
+              <p class="recommendation__slider-person-location">
+                Preston Rd. Inglewood, Maine 98380
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
-</section> -->
+</section>

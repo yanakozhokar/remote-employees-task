@@ -8,3 +8,32 @@ body {
   line-height: 1.75;
   color: #626687;
 }
+
+.title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: capitalize;
+  color: $title-color;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 8px;
+    width: 32px;
+    height: 1px;
+    background-color: $title-color;
+  }
+}
+
+.subtitle {
+  margin-top: 12px;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: $subtitle-color;
+}
