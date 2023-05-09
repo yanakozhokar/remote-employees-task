@@ -1,8 +1,8 @@
-const sellCarouselRef = document.querySelector('.sell-carousel');
+const sellCarouselRef = document.querySelector('.sell__slider-list');
 
 const sellSlider = () => {
   const sellCarouselImagesRef = [
-    ...document.querySelectorAll('.sell-carousel__img'),
+    ...document.querySelectorAll('.sell__slider-img'),
   ];
   const firstElem = sellCarouselImagesRef[0].src;
 

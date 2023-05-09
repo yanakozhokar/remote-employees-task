@@ -1,4 +1,100 @@
-.sell-carousel {
+.sell {
+  & .container {
+    display: flex;
+    gap: 148px;
+  }
+}
+
+.sell__text {
+  margin-top: 16px;
+  margin-left: 40px;
+  max-width: 413px;
+  opacity: 0.75;
+}
+
+.sell__details-title {
+  margin-top: 16px;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $subtitle-color;
+  opacity: 0.75;
+}
+
+.sell__details-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+  margin-left: 40px;
+  max-width: 440px;
+}
+
+.sell__details-item {
+  display: flex;
+  align-items: center;
+}
+
+.sell__details-icon {
+  width: 32px;
+  height: 32px;
+  fill: $details-icon-fill;
+}
+
+.sell__details-item-text {
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: $details-text-color;
+}
+
+.sell__contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-left: 40px;
+  padding-top: 32px;
+  max-width: 440px;
+  border-top: 2px solid $line;
+}
+
+.sell__person {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.sell__person-img-container {
+  width: 56px;
+  height: 56px;
+}
+
+.sell__person-img {
+  width: 100%;
+  height: 100%;
+}
+
+.sell__person-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  color: $person-name;
+}
+
+.sell__person-position {
+  font-weight: 500;
+  line-height: 1.5;
+  color: $person-info;
+}
+
+.sell__btn-icon {
+  margin-right: 16px;
+}
+
+.sell__slider-list {
   position: relative;
   display: flex;
   margin: 0 auto;
@@ -6,39 +102,44 @@
   height: 459px;
 }
 
-.carousel__first-slide-container {
+.sell__first-slide-container {
   position: absolute;
   top: 0;
   right: 0;
   width: 488px;
   height: 416px;
+  border-radius: 4px;
 }
 
-.carousel__second-slide-container {
+.sell__second-slide-container {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 296px;
   height: 168px;
+  border-radius: 4px;
 }
 
-.carousel__third-slide-container {
+.sell__third-slide-container {
   position: absolute;
   bottom: 0;
   right: 20px;
   width: 96px;
   height: 80px;
+  border-radius: 4px;
 }
 
-.carousel__fourth-slide-container {
+.sell__fourth-slide-container {
   position: absolute;
   bottom: 0;
   right: 124px;
   width: 96px;
   height: 80px;
+  border-radius: 4px;
 }
 
-.sell-carousel__img {
+.sell__slider-img {
   width: 100%;
   height: 100%;
+  border-radius: 4px;
 }
