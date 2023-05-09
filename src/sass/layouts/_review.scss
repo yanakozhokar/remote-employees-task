@@ -19,13 +19,13 @@
 }
 
 .review__item {
-  position: relative;
   display: flex;
   justify-content: center;
   height: 505px !important;
 }
 
 .review__img-container {
+  position: relative;
   width: 740px;
   height: 400px;
   border-radius: 8px;
@@ -38,6 +38,9 @@
 .review__card {
   position: absolute;
   top: 256px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   padding: 32px;
   max-width: 612px;
   border-radius: 16px;
