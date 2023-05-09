@@ -1,0 +1,145 @@
+.articles {
+  & .title {
+    flex-direction: column;
+
+    &::before {
+      margin-bottom: 8px;
+      margin-right: 0;
+    }
+  }
+
+  & .subtitle {
+    text-align: center;
+  }
+
+  & .btn-primary {
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.articles__all {
+  display: flex;
+  gap: 68px;
+  margin-top: 40px;
+}
+
+.articles__column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.articles__link {
+  pointer-events: none;
+}
+
+.articles__article {
+  display: flex;
+  gap: 32px;
+}
+
+.articles__column-left {
+  max-width: 572px;
+}
+
+.articles__column-left-img-container {
+  flex-shrink: 0;
+  width: 200px;
+  height: 144px;
+  border-radius: 16px;
+}
+
+.articles__column-left-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.articles__column-left-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.articles__person-img-container {
+  width: 32px;
+  height: 32px;
+}
+
+.articles__person-img {
+  width: 100%;
+  height: 100%;
+}
+
+.articles__person-name {
+  font-size: 14px;
+  line-height: 1.57;
+  color: $text-thirdly-color;
+}
+
+.articles__column-left-title {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  text-transform: capitalize;
+  color: $subtitle-color;
+}
+
+.articles__timing {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $text-secondary-color;
+}
+
+.articles__timing-icon {
+  fill: currentColor;
+}
+
+.articles__column-right {
+  max-width: 560px;
+
+  .articles__article {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.articles__column-right-img-container {
+  width: 560px;
+  height: 280px;
+  border-radius: 16px;
+}
+
+.articles__column-right-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.articles__column-right-title {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33;
+  text-transform: capitalize;
+  color: $subtitle-color;
+}
+
+.articles__column-right-text {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.71;
+  opacity: 0.75;
+}
