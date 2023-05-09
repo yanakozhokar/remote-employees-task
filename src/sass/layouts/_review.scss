@@ -118,3 +118,25 @@
   line-height: 1.4;
   color: $text-thirdly-color;
 }
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+
+  & button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    font-size: 0;
+    border: unset;
+    background-color: $pagination-bg;
+  }
+
+  & .slick-active {
+    button {
+      background-color: $pagination-bg-active;
+    }
+  }
+}
