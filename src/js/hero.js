@@ -17,4 +17,5 @@ $('.hero__slider-list').slick({
   autoplaySpeed: 3000,
   slidesToShow: 2,
   arrows: false,
+  variableWidth: true,
 });
