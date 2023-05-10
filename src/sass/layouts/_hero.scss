@@ -1,5 +1,7 @@
 .hero {
   position: relative;
+  overflow: hidden;
+
   &.section {
     padding-top: 204px;
     padding-bottom: 20px;
@@ -19,11 +21,9 @@
 }
 
 .hero__left-container {
-  width: 50%;
-  padding-right: 26px;
-
   @media (min-width: 768px) {
     padding-right: 26px;
+    width: 50%;
   }
 
   @media (min-width: 1200px) {
@@ -181,23 +181,22 @@
 
 .hero__partnership-list {
   display: flex;
-  gap: 28px;
-  max-width: 496px;
+  justify-content: space-between;
 
-  @media (min-width: 768px) {
-    gap: 28px;
+  @media (min-width: 480px) {
+    max-width: 400px;
   }
 
   @media (min-width: 1200px) {
-    gap: 32px;
+    max-width: 496px;
   }
 }
 
 .hero__partnership-list-item {
-  width: 66px;
-  height: 50px;
+  width: 59px;
+  height: 45px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
     width: 66px;
     height: 50px;
   }
@@ -217,13 +216,17 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
+  display: none;
   width: 50%;
   min-height: 90%;
   border-bottom-left-radius: 80px;
   z-index: -1;
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__bg-img {
@@ -417,11 +420,6 @@
   transform: rotate(90deg);
   z-index: -1;
 
-  @media (min-width: 768px) {
-    width: 328px;
-    height: 370px;
-  }
-
   @media (min-width: 1200px) {
     width: 438px;
     height: 494px;
@@ -439,11 +437,6 @@
   filter: blur(60px);
   transform: rotate(90deg);
   z-index: -1;
-
-  @media (min-width: 768px) {
-    width: 328px;
-    height: 370px;
-  }
 
   @media (min-width: 1200px) {
     width: 438px;
