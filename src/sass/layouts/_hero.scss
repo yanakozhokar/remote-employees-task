@@ -215,10 +215,10 @@
 .hero__right-container {
   position: absolute;
   top: 0;
+  bottom: 7%;
   right: 0;
   display: none;
   width: 50%;
-  min-height: 90%;
   border-bottom-left-radius: 80px;
   z-index: -1;
   overflow: hidden;
@@ -241,7 +241,6 @@
   bottom: 24px;
   left: 28px;
   display: flex;
-  max-width: 720px;
 
   @media (min-width: 768px) {
     bottom: 24px;
