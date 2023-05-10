@@ -11,12 +11,6 @@
   padding-top: 46px;
   padding-bottom: 46px;
   z-index: 1;
-
-  & .btn-secondary {
-    margin-left: 54px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
 }
 
 .nav-menu {
@@ -29,7 +23,17 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  min-width: 344px;
+  min-width: 240px;
+
+  @media (min-width: 768px) {
+    gap: 10px;
+    min-width: 240px;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 24px;
+    min-width: 344px;
+  }
 }
 
 .nav-menu__list-item {
@@ -38,11 +42,11 @@
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border: 1px solid $nav-item-border;
   border-radius: 32px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.28;
   color: $nav-item-text;
   background-color: $nav-item-bg;
@@ -50,12 +54,33 @@
   &:has(.nav-menu__dropdown) {
     position: absolute;
     top: 6px;
-    right: 0;
+    right: -13px;
+
+    @media (min-width: 1200px) {
+      right: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $nav-item-bg-hover;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
 
 .nav-menu__dropdown {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
   &:hover .nav-menu__dropdown-item {
     display: block;
@@ -68,13 +93,47 @@
 
 .nav-menu__dropdown-item--visible {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-menu__dropdown-arrow {
-  margin-left: 10px;
-  width: 18px;
-  height: 18px;
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
   fill: currentColor;
+
+  @media (min-width: 768px) {
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.header__btn {
+  @extend .btn-secondary;
+  margin-left: 54px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  &:hover {
+    border-color: $btn-secondary-bg-active;
+    background-color: $btn-secondary-bg-active;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 54px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
