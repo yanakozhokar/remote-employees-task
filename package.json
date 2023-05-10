@@ -2,7 +2,7 @@
   "name": "remote-employees-task",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://yanakozhokar.github.io/remote-employees-task",
+  "homepage": "https://yanakozhokar.github.io/remote-employees-task/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /remote-employees-task/"
@@ -12,7 +12,7 @@
     "url": "git+https://yanakozhokar.github.io/remote-employees-task"
   },
   "keywords": [],
-  "author": "Yana Kozhokar",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://yanakozhokar.github.io/remote-employees-task/issues"
