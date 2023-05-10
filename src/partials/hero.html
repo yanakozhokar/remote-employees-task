@@ -67,40 +67,146 @@
       </ul>
     </div>
     <div class="hero__right-container">
-      <img
-        src="./images/bg-house-desk-1x.jpg"
-        alt="House"
-        class="hero__bg-img"
-      />
+      <picture>
+        <source
+          class="hero__bg-img"
+          srcset="
+            ./images/bg-house-desk-1x.jpg 1x,
+            ./images/bg-house-desk-2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          class="hero__bg-img"
+          srcset="
+            ./images/bg-house-desk-1x.jpg 1x,
+            ./images/bg-house-desk-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          class="hero__bg-img"
+          srcset="
+            ./images/bg-house-desk-1x.jpg 1x,
+            ./images/bg-house-desk-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="hero__bg-img"
+          src="./images/bg-house-desk-1x.jpg"
+          alt="House"
+          width="720"
+          height="720"
+        />
+      </picture>
       <ul class="hero__slider-list">
         <li class="hero__slider-item">
           <ul class="hero__slider-avatars-list">
             <li class="hero__slider-avatars-item">
-              <img
-                src="./images/hero-esther-howard-desk-1x.png"
-                alt="Avatar"
-                width="56"
-                height="56"
-                class="hero__slider-avatars-img"
-              />
+              <picture>
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-esther-howard-desk-1x.png 1x,
+                    ./images/hero-esther-howard-desk-2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-esther-howard-desk-1x.png 1x,
+                    ./images/hero-esther-howard-desk-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-esther-howard-desk-1x.png 1x,
+                    ./images/hero-esther-howard-desk-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero__slider-avatars-img"
+                  src="./images/hero-esther-howard-desk-1x.png"
+                  alt="Avatar"
+                  width="56"
+                  height="56"
+                />
+              </picture>
             </li>
             <li class="hero__slider-avatars-item">
-              <img
-                src="./images/hero-man-desk-1x.png"
-                alt="Avatar"
-                width="56"
-                height="56"
-                class="hero__slider-avatars-img"
-              />
+              <picture>
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-man-desk-1x.png 1x,
+                    ./images/hero-man-desk-2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-man-desk-1x.png 1x,
+                    ./images/hero-man-desk-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-man-desk-1x.png 1x,
+                    ./images/hero-man-desk-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero__slider-avatars-img"
+                  src="./images/hero-man-desk-1x.png"
+                  alt="Avatar"
+                  width="56"
+                  height="56"
+                />
+              </picture>
             </li>
             <li class="hero__slider-avatars-item">
-              <img
-                src="./images/hero-dianne-russel-desk-1x.png"
-                alt="Avatar"
-                width="56"
-                height="56"
-                class="hero__slider-avatars-img"
-              />
+              <picture>
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-dianne-russel-desk-1x.png 1x,
+                    ./images/hero-dianne-russel-desk-2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-dianne-russel-desk-1x.png 1x,
+                    ./images/hero-dianne-russel-desk-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  class="hero__slider-avatars-img"
+                  srcset="
+                    ./images/hero-dianne-russel-desk-1x.png 1x,
+                    ./images/hero-dianne-russel-desk-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="hero__slider-avatars-img"
+                  src="./images/hero-dianne-russel-desk-1x.png"
+                  alt="Avatar"
+                  width="56"
+                  height="56"
+                />
+              </picture>
             </li>
           </ul>
           <div class="hero__slider-description">
@@ -113,11 +219,39 @@
         </li>
         <li class="hero__slider-item">
           <div class="hero__slider-img-container">
-            <img
-              src="./images/hero-house-desk-1x.png"
-              alt="House"
-              class="hero__slider-img"
-            />
+            <picture>
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/hero-house-desk-1x.png 1x,
+                  ./images/hero-house-desk-2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/hero-house-desk-1x.png 1x,
+                  ./images/hero-house-desk-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/hero-house-desk-1x.png 1x,
+                  ./images/hero-house-desk-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero__slider-img"
+                src="./images/hero-house-desk-1x.png"
+                alt="House"
+                width="56"
+                height="56"
+              />
+            </picture>
           </div>
           <div class="hero__slider-description">
             <p class="hero__slider-accent">56 Houses</p>
@@ -126,11 +260,39 @@
         </li>
         <li class="hero__slider-item">
           <div class="hero__slider-img-container">
-            <img
-              src="./images/hero-woman-desk-1x.png"
-              alt="Woman"
-              class="hero__slider-img"
-            />
+            <picture>
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/hero-woman-desk-1x.png 1x,
+                  ./images/hero-woman-desk-2x.png 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/hero-woman-desk-1x.png 1x,
+                  ./images/hero-woman-desk-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/hero-woman-desk-1x.png 1x,
+                  ./images/hero-woman-desk-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero__slider-img"
+                src="./images/hero-woman-desk-1x.png"
+                alt="Woman"
+                width="56"
+                height="56"
+              />
+            </picture>
           </div>
           <div class="hero__slider-description">
             <p class="hero__slider-accent">4K+</p>
@@ -139,11 +301,39 @@
         </li>
         <li class="hero__slider-item">
           <div class="hero__slider-img-container">
-            <img
-              src="./images/subscribe-apartment-desk-1x.jpg"
-              alt="House"
-              class="hero__slider-img"
-            />
+            <picture>
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/subscribe-apartment-desk-1x.jpg 1x,
+                  ./images/subscribe-apartment-desk-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/subscribe-apartment-desk-1x.jpg 1x,
+                  ./images/subscribe-apartment-desk-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                class="hero__slider-img"
+                srcset="
+                  ./images/subscribe-apartment-desk-1x.jpg 1x,
+                  ./images/subscribe-apartment-desk-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="hero__slider-img"
+                src="./images/subscribe-apartment-desk-1x.jpg"
+                alt="Apartment"
+                width="56"
+                height="56"
+              />
+            </picture>
           </div>
           <div class="hero__slider-description">
             <p class="hero__slider-accent">100+ Apartments</p>
