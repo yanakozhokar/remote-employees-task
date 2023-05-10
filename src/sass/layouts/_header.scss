@@ -201,7 +201,7 @@
 .menu-close-icon {
   width: 20px;
   height: 20px;
-  fill: $subtitle-color;
+  fill: $modal-btn-close;
 }
 
 .menu__list {
@@ -209,7 +209,7 @@
   flex-direction: column;
   gap: 25px;
   font-size: 19px;
-  color: $subtitle-color;
+  color: $modal-text;
 }
 
 .menu__dropdown {
@@ -229,5 +229,5 @@
   margin-left: 2px;
   width: 22px;
   height: 22px;
-  fill: $subtitle-color;
+  fill: $modal-text;
 }

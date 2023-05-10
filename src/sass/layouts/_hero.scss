@@ -93,7 +93,7 @@
 }
 
 .hero__form-input {
-  padding: 14px 100px 14px 40px;
+  padding: 14px 103px 14px 40px;
   width: 100%;
   border: 1px solid $input-border-color;
   border-radius: 32px;
@@ -188,18 +188,20 @@
 .hero__partnership-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 7px;
 
   @media (min-width: 480px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 400px;
   }
 
   @media (min-width: 1200px) {
-    max-width: 496px;
+    max-width: 427px;
   }
 }
 
 .hero__partnership-list-item {
-  width: 59px;
+  width: 60px;
   height: 45px;
 
   @media (min-width: 480px) {
