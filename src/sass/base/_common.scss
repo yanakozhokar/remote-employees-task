@@ -4,9 +4,21 @@ body {
   font-family: 'Lexend';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.75;
   color: $text-primary-color;
+
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
 }
 
 .title {
