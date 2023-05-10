@@ -1,18 +1,16 @@
 .hero {
+  @extend %section;
   position: relative;
   overflow: hidden;
+  padding-top: 204px;
+  padding-bottom: 20px;
 
-  &.section {
+  @media (min-width: 768px) {
     padding-top: 204px;
-    padding-bottom: 20px;
+  }
 
-    @media (min-width: 768px) {
-      padding-top: 204px;
-    }
-
-    @media (min-width: 1440px) {
-      padding-top: 314px;
-    }
+  @media (min-width: 1440px) {
+    padding-top: 314px;
   }
 
   & > .container {
@@ -299,10 +297,6 @@
   display: flex;
   width: 90px;
 
-  @media (min-width: 768px) {
-    width: 90px;
-  }
-
   @media (min-width: 1200px) {
     width: 112px;
   }
@@ -339,7 +333,7 @@
     }
 
     @media (min-width: 1200px) {
-      left: 28px;
+      left: 56px;
     }
   }
 
