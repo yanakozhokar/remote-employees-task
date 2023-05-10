@@ -23,6 +23,37 @@
         </ul>
       </li>
     </ul>
+    <button class="nav-menu__btn-open" data-menu-open>
+      <svg width="32" height="32" class="nav-menu_icon">
+        <use href="./images/icons.svg#icon-menu-open"></use>
+      </svg>
+    </button>
   </nav>
   <button type="button" class="header__btn">Sign Up!</button>
+</div>
+<div class="menu is-hidden" data-menu>
+  <div class="menu__container" data-menu-close>
+    <button class="menu__close-btn">
+      <svg width="32" height="32" class="menu__close-icon">
+        <use href="./images/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#">About Us</a></li>
+      <li class="menu__item"><a href="#">Article</a></li>
+      <li class="menu__item">
+        <ul class="menu__dropdown">
+          <li class="menu__dropdown-item">
+            Property
+            <svg width="22" height="22" class="menu__dropdown-arrow">
+              <use href="./images/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </li>
+          <li class="menu__dropdown-item"><a href="#">House</a></li>
+          <li class="menu__dropdown-item"><a href="#">Villa</a></li>
+          <li class="menu__dropdown-item"><a href="#">Apartment</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>

@@ -6,6 +6,7 @@ body {
   font-weight: 400;
   font-size: 13px;
   line-height: 1.75;
+  overflow-x: hidden;
   color: $text-primary-color;
 
   @media (min-width: 768px) {
@@ -48,4 +49,35 @@ body {
   line-height: 1.25;
   text-transform: capitalize;
   color: $subtitle-color;
+}
+
+.gradient-container-1 {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gradient-1 {
+  position: absolute;
+  bottom: 160px;
+  right: 0;
+  z-index: -1;
+  width: 438px;
+  height: 494px;
+  background-color: $gradient-1;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+}
+
+.gradient-2 {
+  position: absolute;
+  bottom: 43px;
+  right: -153px;
+  z-index: -1;
+  width: 438px;
+  height: 494px;
+  background: $gradient-2;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
 }

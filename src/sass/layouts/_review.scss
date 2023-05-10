@@ -1,4 +1,6 @@
 .review {
+  @extend %section;
+
   & .title {
     flex-direction: column;
 

@@ -1,4 +1,5 @@
 .sell {
+  @extend %section;
   position: relative;
 
   & .container {
@@ -165,17 +166,4 @@
   width: 100%;
   height: 100%;
   border-radius: 4px;
-}
-
-.sell__gradient {
-  position: absolute;
-  top: -130px;
-  right: -94px;
-  z-index: 0;
-  width: 438px;
-  height: 494px;
-  background-color: $sell-gradient;
-  opacity: 0.3;
-  filter: blur(60px);
-  transform: rotate(90deg);
 }
