@@ -30,6 +30,10 @@
   color: $btn-primary-text;
   border-color: $btn-primary-bg;
   background-color: $btn-primary-bg;
+
+  &:active {
+    background-color: $btn-primary-active-bg;
+  }
 }
 
 .btn-secondary {

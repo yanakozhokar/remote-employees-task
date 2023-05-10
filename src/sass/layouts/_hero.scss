@@ -115,6 +115,10 @@
     }
   }
 
+  &:focus {
+    outline-color: $input-icon-fill;
+  }
+
   @media (min-width: 768px) {
     padding: 14px 104px 14px 40px;
   }
@@ -144,6 +148,10 @@
     width: 24px;
     height: 24px;
   }
+}
+
+.hero__btn {
+  @extend .btn-primary;
 }
 
 .hero__btn-arrow {
