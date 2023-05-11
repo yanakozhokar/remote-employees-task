@@ -28,7 +28,7 @@ const updateSlider = () => {
     Math.round(
       (recSliderListRef.clientWidth -
         recSliderItemsRef[0].clientWidth * slidesToShow) /
-        slidesToShow
+        (slidesToShow - 1)
     ) + 1;
 
   recSliderItemsRef.forEach(
@@ -55,7 +55,7 @@ const marginLeft =
   Math.round(
     (recSliderListRef.clientWidth -
       recSliderItemsRef[0].clientWidth * slidesToShow) /
-      slidesToShow
+      (slidesToShow - 1)
   ) + 1;
 
 recSliderItemsRef.forEach(

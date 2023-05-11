@@ -1,23 +1,68 @@
 .recommendation {
   @extend %section;
-  overflow-x: hidden;
+
+  & .title {
+    @media (max-width: 1199px) {
+      flex-direction: column;
+
+      &::before {
+        margin-bottom: 8px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  & .subtitle {
+    margin-left: 0;
+
+    @media (min-width: 1200px) {
+      margin-left: 40px;
+    }
+  }
 }
 
 .recommendation__top {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.recommendation__title-container {
+  align-self: center;
+  margin-bottom: 40px;
+
+  @media (min-width: 1200px) {
+    align-self: unset;
+    margin-bottom: 0;
+  }
 }
 
 .recommendation__filter-list {
   display: flex;
   gap: 32px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: 1200px) {
+    position: static;
+  }
 }
 
 .recommendation__filter-icon {
   margin-right: 8px;
-  width: 24px;
-  height: 24px;
 }
 
 .recommendation__controls {
@@ -25,10 +70,20 @@
   gap: 16px;
 }
 
+.recomendation__prev-btn {
+  @extend .btn-arrow-secondary;
+}
+
+.recommendation__next-btn {
+  @extend .btn-arrow-primary;
+}
+
 .recommendation__slider-list {
   margin-top: 40px;
-  margin-left: 40px;
-  width: 100%;
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+  }
 }
 
 .recommendation__slider-item {
@@ -86,23 +141,47 @@
 .recommendation__slider-title {
   margin-top: 24px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.33;
   color: $recommendation-title;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 .recommendation__slider-price {
   margin-top: 8px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   color: $recommendation-price;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .recommendation__slider-person {
   display: flex;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 24px;
+  }
 }
 
 .recommendation__slider-person-img-container {
@@ -121,15 +200,31 @@
 
 .recommendation__slider-person-name {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.33;
   color: $person-name;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .recommendation__slider-person-location {
   margin-top: 4px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.57;
   color: $person-info;
+
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
