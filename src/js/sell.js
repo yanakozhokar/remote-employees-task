@@ -1,18 +1,30 @@
-const sellCarouselRef = document.querySelector('.sell__slider-list');
+const sellSliderRef = document.querySelector('.sell__slider-list');
+let intervalId;
 
 const sellSlider = () => {
-  const sellCarouselImagesRef = [
+  const sellSliderImagesRef = [
     ...document.querySelectorAll('.sell__slider-img'),
   ];
-  const firstElem = sellCarouselImagesRef[0].src;
+  const firstElem = sellSliderImagesRef[0].src;
 
-  for (let i = 0; i < sellCarouselImagesRef.length; i += 1) {
-    if (i < sellCarouselImagesRef.length - 1) {
-      sellCarouselImagesRef[i].src = sellCarouselImagesRef[i + 1].src;
+  for (let i = 0; i < sellSliderImagesRef.length; i += 1) {
+    if (i < sellSliderImagesRef.length - 1) {
+      sellSliderImagesRef[i].src = sellSliderImagesRef[i + 1].src;
     } else {
-      sellCarouselImagesRef[i].src = firstElem;
+      sellSliderImagesRef[i].src = firstElem;
     }
   }
 };
 
-setInterval(sellSlider, 3000);
+const startSlider = () => {
+  intervalId = setInterval(sellSlider, 3000);
+};
+
+const stopSlider = () => {
+  clearInterval(intervalId);
+};
+
+sellSliderRef.addEventListener('mouseenter', stopSlider);
+sellSliderRef.addEventListener('mouseleave', startSlider);
+
+startSlider();
