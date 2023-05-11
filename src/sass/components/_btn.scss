@@ -117,17 +117,30 @@
 
 .btn-filter-primary {
   @extend %btn;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-size: 16px;
+  padding: 8px 10px;
+  font-size: 12px;
   color: $btn-filter-primary-text;
   border-color: $btn-filter-primary-bg;
   background-color: $btn-filter-primary-bg;
 
+  & svg {
+    width: 15px;
+    height: 15px;
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   @media (min-width: 768px) {
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 16px;
+    padding: 12px 16px;
+    font-size: 15px;
   }
 
   @media (min-width: 1440px) {
@@ -139,17 +152,30 @@
 
 .btn-filter-secondary {
   @extend %btn;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-size: 16px;
+  padding: 8px 10px;
+  font-size: 12px;
   color: $btn-filter-secondary-text;
   border-color: $btn-filter-secondary-border;
   background-color: $btn-filter-secondary-bg;
 
+  & svg {
+    width: 15px;
+    height: 15px;
+
+    @media (min-width: 768px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   @media (min-width: 768px) {
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 16px;
+    padding: 12px 16px;
+    font-size: 15px;
   }
 
   @media (min-width: 1440px) {

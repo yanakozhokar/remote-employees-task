@@ -24,12 +24,22 @@ const updateSlider = () => {
     slider.slick('slickSetOption', 'slidesToShow', slidesToShow, true);
   }
 
-  const marginLeft =
-    Math.round(
+  let marginLeft;
+
+  if (slidesToShow !== 1) {
+    marginLeft =
+      Math.round(
+        (recSliderListRef.clientWidth -
+          recSliderItemsRef[0].clientWidth * slidesToShow) /
+          (slidesToShow - 1)
+      ) + 1;
+  } else {
+    marginLeft = Math.round(
       (recSliderListRef.clientWidth -
         recSliderItemsRef[0].clientWidth * slidesToShow) /
-        (slidesToShow - 1)
-    ) + 1;
+        slidesToShow
+    );
+  }
 
   recSliderItemsRef.forEach(
     item => (item.style = `margin-left: ${marginLeft}px;`)
@@ -51,13 +61,21 @@ $(document).ready(() => {
 
 const slidesToShow = getSlidesAmount();
 
-const marginLeft =
-  Math.round(
-    (recSliderListRef.clientWidth -
-      recSliderItemsRef[0].clientWidth * slidesToShow) /
-      (slidesToShow - 1)
-  ) + 1;
+if (slidesToShow !== 1) {
+  const marginLeft =
+    Math.round(
+      (recSliderListRef.clientWidth -
+        recSliderItemsRef[0].clientWidth * slidesToShow) /
+        (slidesToShow - 1)
+    ) + 1;
 
-recSliderItemsRef.forEach(
-  item => (item.style = `margin-left: ${marginLeft}px;`)
-);
+  recSliderItemsRef.forEach(
+    item => (item.style = `margin-left: ${marginLeft}px;`)
+  );
+} else {
+  const margin = Math.round(
+    (recSliderListRef.clientWidth - recSliderItemsRef[0].clientWidth) / 2
+  );
+
+  recSliderItemsRef.forEach(item => (item.style = `margin-left: ${margin}px;`));
+}

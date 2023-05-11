@@ -24,10 +24,10 @@
 .recommendation__top {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
 
   @media (min-width: 768px) {
-    flex-direction: column;
+    align-items: flex-end;
   }
 
   @media (min-width: 1200px) {
@@ -38,7 +38,11 @@
 
 .recommendation__title-container {
   align-self: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 
   @media (min-width: 1200px) {
     align-self: unset;
@@ -48,12 +52,14 @@
 
 .recommendation__filter-list {
   display: flex;
-  gap: 32px;
+  justify-content: space-between;
 
   @media (min-width: 768px) {
     position: absolute;
     bottom: 0;
     left: 0;
+    justify-content: unset;
+    gap: 32px;
   }
 
   @media (min-width: 1200px) {
@@ -66,8 +72,12 @@
 }
 
 .recommendation__controls {
-  display: flex;
-  gap: 16px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+  }
 }
 
 .recomendation__prev-btn {
@@ -87,7 +97,10 @@
 }
 
 .recommendation__slider-item {
-  max-width: 340px;
+  width: 272px;
+  @media (min-width: 768px) {
+    width: 340px;
+  }
 }
 
 .recommendation__slider-img-container {
@@ -141,7 +154,7 @@
 .recommendation__slider-title {
   margin-top: 24px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.33;
   color: $recommendation-title;
 
@@ -157,7 +170,7 @@
 .recommendation__slider-price {
   margin-top: 8px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: $recommendation-price;
 
@@ -200,7 +213,7 @@
 
 .recommendation__slider-person-name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.33;
   color: $person-name;
 
@@ -216,7 +229,7 @@
 .recommendation__slider-person-location {
   margin-top: 4px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.57;
   color: $person-info;
 
