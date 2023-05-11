@@ -75,14 +75,19 @@ body {
 .gradient-1 {
   position: absolute;
   bottom: 160px;
-  right: 0;
+  right: -94px;
   z-index: -1;
+  display: none;
   width: 438px;
   height: 494px;
   background-color: $gradient-1;
   opacity: 0.3;
   filter: blur(60px);
   transform: rotate(90deg);
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .gradient-2 {
@@ -90,10 +95,15 @@ body {
   bottom: 43px;
   right: -153px;
   z-index: -1;
+  display: none;
   width: 438px;
   height: 494px;
   background: $gradient-2;
   opacity: 0.3;
   filter: blur(60px);
   transform: rotate(90deg);
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
