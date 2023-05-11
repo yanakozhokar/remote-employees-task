@@ -133,17 +133,12 @@
   height: 100%;
 }
 
-.header__btn {
+.header__btn-sign {
   @extend .btn-secondary;
   display: none;
   margin-left: 54px;
   padding-left: 24px;
   padding-right: 24px;
-
-  &:hover {
-    border-color: $btn-secondary-bg-active;
-    background-color: $btn-secondary-bg-active;
-  }
 
   @media (min-width: 768px) {
     display: flex;

@@ -31,6 +31,12 @@
   border-color: $btn-primary-bg;
   background-color: $btn-primary-bg;
 
+  &:hover,
+  &:focus {
+    border-color: $btn-primary-hover-bg;
+    background-color: $btn-primary-hover-bg;
+  }
+
   &:active {
     border-color: $btn-primary-active-bg;
     background-color: $btn-primary-active-bg;
@@ -42,6 +48,12 @@
   color: $btn-secondary-text;
   border-color: $btn-secondary-bg;
   background-color: $btn-secondary-bg;
+
+  &:hover,
+  &:focus {
+    border-color: $btn-secondary-bg-hover;
+    background-color: $btn-secondary-bg-hover;
+  }
 
   &:active {
     border-color: $btn-secondary-bg-active;
