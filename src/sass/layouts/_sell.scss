@@ -4,34 +4,64 @@
 
   & .container {
     display: flex;
-    gap: 148px;
+    flex-direction: column;
+    gap: 120px;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      gap: 148px;
+    }
+  }
+}
+
+.sell__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    align-items: unset;
+    max-width: 524px;
   }
 }
 
 .sell__text {
   margin-top: 16px;
-  margin-left: 40px;
-  max-width: 413px;
   opacity: 0.75;
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+    max-width: 413px;
+  }
 }
 
 .sell__details-title {
   margin-top: 16px;
-  margin-left: 40px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.75;
   color: $subtitle-color;
   opacity: 0.75;
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+  }
 }
 
 .sell__details-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  row-gap: 20px;
   margin-top: 16px;
-  margin-left: 40px;
-  max-width: 440px;
+
+  @media (min-width: 768px) {
+    column-gap: 170px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+    gap: 16px;
+  }
 }
 
 .sell__details-item {
@@ -56,12 +86,28 @@
 
 .sell__contact {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
   margin-top: 32px;
-  margin-left: 40px;
   padding-top: 32px;
-  max-width: 440px;
   border-top: 2px solid $line;
+  width: 100%;
+  max-width: 565px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    gap: unset;
+    margin-left: 40px;
+    max-width: 440px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+    max-width: 440px;
+  }
 }
 
 .sell__person {
@@ -94,15 +140,23 @@
 }
 
 .sell__btn-icon {
-  margin-right: 16px;
+  margin-right: 12px;
+
+  @media (min-width: 768px) {
+    margin-right: 16px;
+  }
 }
 
 .sell__slider-list {
   position: relative;
-  display: flex;
+  display: none;
   margin: 0 auto;
   width: 528px;
   height: 459px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .sell__first-slide-container {
