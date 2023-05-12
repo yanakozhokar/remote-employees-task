@@ -7,7 +7,10 @@
       </div>
       <ul class="recommendation__filter-list">
         <li class="recommendation__filter-item">
-          <button class="recommendation__filter-btn btn-filter-primary">
+          <button
+            class="recommendation__filter-btn btn-filter-primary"
+            data-filter="houses"
+          >
             <svg width="24" height="24" class="recommendation__filter-icon">
               <use href="./images/icons.svg#icon-house"></use>
             </svg>
@@ -15,7 +18,10 @@
           </button>
         </li>
         <li class="recommendation__filter-item">
-          <button class="recommendation__filter-btn btn-filter-secondary">
+          <button
+            class="recommendation__filter-btn btn-filter-secondary"
+            data-filter="villas"
+          >
             <svg width="24" height="24" class="recommendation__filter-icon">
               <use href="./images/icons.svg#icon-villa"></use>
             </svg>
@@ -23,7 +29,10 @@
           </button>
         </li>
         <li class="recommendation__filter-item">
-          <button class="recommendation__filter-btn btn-filter-secondary">
+          <button
+            class="recommendation__filter-btn btn-filter-secondary"
+            data-filter="apartments"
+          >
             <svg width="24" height="24" class="recommendation__filter-icon">
               <use href="./images/icons.svg#icon-apartment"></use>
             </svg>
@@ -45,7 +54,7 @@
       </div>
     </div>
     <ul class="recommendation__slider-list">
-      <li class="recommendation__slider-item">
+      <li class="recommendation__slider-item" data-type="house">
         <div class="recommendation__slider-img-container">
           <picture>
             <source
@@ -78,7 +87,6 @@
               alt="Roselands House"
               width="340"
               height="382"
-              data-type="house"
             />
           </picture>
           <div class="recommendation__slider-type--popular">
@@ -127,7 +135,6 @@
                 alt="Dianne Russell"
                 width="40"
                 height="40"
-                data-type="villa"
               />
             </picture>
           </div>
@@ -139,7 +146,7 @@
           </div>
         </div>
       </li>
-      <li class="recommendation__slider-item">
+      <li class="recommendation__slider-item" data-type="villa">
         <div class="recommendation__slider-img-container">
           <picture>
             <source
@@ -172,7 +179,6 @@
               alt="Woodlandside"
               width="340"
               height="382"
-              data-type="apartment"
             />
           </picture>
           <div class="recommendation__slider-type--new">
@@ -221,7 +227,6 @@
                 alt="Robert Fox"
                 width="40"
                 height="40"
-                data-type="house"
               />
             </picture>
           </div>
@@ -233,7 +238,7 @@
           </div>
         </div>
       </li>
-      <li class="recommendation__slider-item">
+      <li class="recommendation__slider-item" data-type="apartment">
         <div class="recommendation__slider-img-container">
           <picture>
             <source
@@ -325,7 +330,7 @@
           </div>
         </div>
       </li>
-      <li class="recommendation__slider-item">
+      <li class="recommendation__slider-item" data-type="house">
         <div class="recommendation__slider-img-container">
           <picture>
             <source
