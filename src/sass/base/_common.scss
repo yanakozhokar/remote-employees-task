@@ -59,7 +59,8 @@ body {
   }
 }
 
-.gradient-container-1 {
+.gradient-container-1,
+.gradient-container-2 {
   position: relative;
   overflow-x: hidden;
 }
@@ -91,6 +92,42 @@ body {
   width: 438px;
   height: 494px;
   background: $gradient-2;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.gradient-3 {
+  position: absolute;
+  bottom: 320px;
+  left: -170px;
+  z-index: -1;
+  display: none;
+  width: 438px;
+  height: 494px;
+  background: #82ffe8;
+  opacity: 0.3;
+  filter: blur(60px);
+  transform: rotate(90deg);
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.gradient-4 {
+  position: absolute;
+  bottom: 140px;
+  left: -142px;
+  z-index: -1;
+  display: none;
+  width: 438px;
+  height: 494px;
+  background: #c8ff82;
   opacity: 0.3;
   filter: blur(60px);
   transform: rotate(90deg);
