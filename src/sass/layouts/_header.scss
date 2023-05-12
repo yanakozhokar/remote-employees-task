@@ -55,6 +55,7 @@
 
   &:has(.nav-menu__dropdown) {
     position: absolute;
+    top: 0;
     right: -13px;
 
     @media (min-width: 1200px) {
