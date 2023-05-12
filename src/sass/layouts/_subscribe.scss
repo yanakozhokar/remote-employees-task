@@ -1,0 +1,119 @@
+.subscribe {
+  @extend %section;
+}
+
+.subscribe__window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 42px;
+  border-radius: 32px;
+  background-image: url('../images/subscribe-bg-desk-1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscribe__title {
+  max-width: 424px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: capitalize;
+  color: $subtitle-color;
+
+  @media (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.subscribe__form {
+  position: relative;
+  margin-top: 28px;
+  width: 100%;
+  max-width: 496px;
+
+  @media (min-width: 768px) {
+    margin-top: 28px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 32px;
+  }
+}
+
+.subscribe__form-input {
+  padding: 14px 103px 14px 40px;
+  width: 100%;
+  border: 1px solid $input-border-color;
+  border-radius: 32px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.57;
+    color: $input-placeholder;
+
+    @media (min-width: 768px) {
+      font-size: 11px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+
+  &:focus {
+    outline-color: $input-icon-fill;
+  }
+
+  @media (min-width: 768px) {
+    padding: 14px 104px 14px 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 17px 129px 17px 64px;
+  }
+}
+
+.subscribe__form-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: $subscribe-icon-fill;
+
+  @media (min-width: 768px) {
+    left: 14px;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    left: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.subscribe__btn {
+  @extend .btn-primary;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: calc(100% - 6px);
+}
+
+.hero__btn-arrow {
+  margin-left: 2px;
+
+  @media (min-width: 768px) {
+    margin-left: 2px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 4px;
+  }
+}

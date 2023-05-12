@@ -40,10 +40,6 @@ body {
     background-color: $title-color;
   }
 
-  @media (min-width: 768px) {
-    font-size: 12px;
-  }
-
   @media (min-width: 1200px) {
     font-size: 14px;
   }
@@ -56,10 +52,6 @@ body {
   line-height: 1.25;
   text-transform: capitalize;
   color: $subtitle-color;
-
-  @media (min-width: 768px) {
-    font-size: 24px;
-  }
 
   @media (min-width: 1200px) {
     margin-left: 40px;
