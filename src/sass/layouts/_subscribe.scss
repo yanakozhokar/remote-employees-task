@@ -3,14 +3,19 @@
 }
 
 .subscribe__window {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 36px 42px;
+  padding: 65px 10px;
   border-radius: 32px;
   background-image: url('../images/subscribe-bg-desk-1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 480px) {
+    padding: 65px 42px;
+  }
 }
 
 .subscribe__title {
@@ -115,5 +120,162 @@
 
   @media (min-width: 1200px) {
     margin-left: 4px;
+  }
+}
+
+.subscribe__img-left-1 {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 42px;
+  width: 81px;
+  height: 81px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 24px;
+  background-image: url('../images/subscribe-chair-1-desk-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.subscribe__img-left-2 {
+  display: none;
+  position: absolute;
+  top: 71px;
+  left: 204px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 50%;
+  background-image: url('../images/subscribe-ronald-richards-desk-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.subscribe__img-left-3 {
+  display: none;
+  position: absolute;
+  top: 173px;
+  left: 67px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 50%;
+  background-image: url('../images/subscribe-dianne-russell-desl-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.subscribe__img-left-4 {
+  display: none;
+  position: absolute;
+  top: 178px;
+  left: 195px;
+  width: 54px;
+  height: 54px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 24px;
+  background-image: url('../images/subscribe-house-desk-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.subscribe__img-right-1 {
+  display: none;
+  position: absolute;
+  top: 44px;
+  right: 200px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 24px;
+  background-image: url('../images/subscribe-apartment-desk-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.subscribe__img-right-2 {
+  display: none;
+  position: absolute;
+  top: 107px;
+  right: 82px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 50%;
+  background-image: url('../images/subscribe-woman-desk-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.subscribe__img-right-3 {
+  display: none;
+  position: absolute;
+  top: 143px;
+  right: 200px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 50%;
+  background-image: url('../images/subscribe-courtney-henry-desk-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.subscribe__img-right-4 {
+  display: none;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border: 2px solid $subscribe-border-color;
+  border-radius: 24px;
+  background-image: url('../images/subscribe-chair-2-desk-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: 768px) {
+    display: block;
+    top: 87px;
+    right: 52px;
+  }
+
+  @media (min-width: 1200px) {
+    top: 197px;
+    right: 73px;
   }
 }
