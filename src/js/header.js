@@ -3,21 +3,20 @@ const menuList = document.querySelector('.menu__list');
 const openMenuBtn = document.querySelector('[data-menu-open]');
 const closeMenuBtn = document.querySelector('[data-menu-close]');
 
-openMenuBtn.addEventListener('click', toggleMenu);
-closeMenuBtn.addEventListener('click', toggleMenu);
-menuList.addEventListener('click', onMenuListClick);
-
-function toggleMenu() {
+const toggleMenu = () => {
   menu.classList.toggle('is-hidden');
 
   !menu.classList.contains('is-hidden')
     ? (document.querySelector('body').style.overflow = 'hidden')
     : (document.querySelector('body').style.overflow = 'visible');
-}
+};
 
-function onMenuListClick(event) {
+const onMenuListClick = event => {
   if (event.target.nodeName === 'A') {
-    console.log('Клик по ссылке');
     toggleMenu();
   }
-}
+};
+
+openMenuBtn.addEventListener('click', toggleMenu);
+closeMenuBtn.addEventListener('click', toggleMenu);
+menuList.addEventListener('click', onMenuListClick);
