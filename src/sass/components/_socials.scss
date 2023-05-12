@@ -1,0 +1,25 @@
+.socials__list {
+  display: flex;
+  gap: 18px;
+
+  @media (min-width: 768px) {
+    gap: 28px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__icon {
+  width: 30px;
+  height: 30px;
+  fill: $socials-icon-fill;
+
+  @media (min-width: 480px) {
+    width: 32px;
+    height: 32px;
+  }
+}
