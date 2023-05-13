@@ -7,6 +7,15 @@
   }
 }
 
+.socials__item {
+  color: $socials-icon-fill;
+
+  &:hover,
+  &:focus {
+    color: $socials-icon-hover-fill;
+  }
+}
+
 .socials__link {
   display: flex;
   justify-content: center;
@@ -16,7 +25,7 @@
 .socials__icon {
   width: 30px;
   height: 30px;
-  fill: $socials-icon-fill;
+  fill: currentColor;
 
   @media (min-width: 480px) {
     width: 32px;

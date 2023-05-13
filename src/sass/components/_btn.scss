@@ -91,6 +91,17 @@
       height: 28px;
     }
   }
+
+  &:hover,
+  &:focus {
+    border-color: $btn-primary-hover-bg;
+    background-color: $btn-primary-hover-bg;
+  }
+
+  &:active {
+    border-color: $btn-primary-active-bg;
+    background-color: $btn-primary-active-bg;
+  }
 }
 
 .btn-arrow-secondary {
@@ -112,6 +123,17 @@
       width: 28px;
       height: 28px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $btn-arrow-secondary-hover-bg;
+    background-color: $btn-arrow-secondary-hover-bg;
+  }
+
+  &:active {
+    border-color: $btn-arrow-secondary-active-bg;
+    background-color: $btn-arrow-secondary-active-bg;
   }
 }
 
@@ -182,5 +204,10 @@
     padding-left: 24px;
     padding-right: 24px;
     font-size: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $btn-filter-secondary-hover-bg;
   }
 }

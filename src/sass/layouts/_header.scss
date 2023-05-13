@@ -64,7 +64,7 @@
     }
   }
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $nav-item-bg-hover;
     cursor: pointer;
   }
