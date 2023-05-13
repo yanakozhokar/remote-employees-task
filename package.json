@@ -18,14 +18,14 @@
     "url": "https://yanakozhokar.github.io/remote-employees-task/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "slick-carousel": "^1.8.1"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
