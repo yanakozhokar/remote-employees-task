@@ -8,6 +8,7 @@
       <ul class="recommendation__filter-list">
         <li class="recommendation__filter-item">
           <button
+          type="button"
             class="recommendation__filter-btn--active"
             data-filter="houses"
           >
@@ -18,7 +19,7 @@
           </button>
         </li>
         <li class="recommendation__filter-item">
-          <button class="recommendation__filter-btn" data-filter="villas">
+          <button type="button" class="recommendation__filter-btn" data-filter="villas">
             <svg width="24" height="24" class="recommendation__filter-icon">
               <use href="./images/icons.svg#icon-villa"></use>
             </svg>
@@ -26,7 +27,7 @@
           </button>
         </li>
         <li class="recommendation__filter-item">
-          <button class="recommendation__filter-btn" data-filter="apartments">
+          <button type="button" class="recommendation__filter-btn" data-filter="apartments">
             <svg width="24" height="24" class="recommendation__filter-icon">
               <use href="./images/icons.svg#icon-apartment"></use>
             </svg>
@@ -35,12 +36,12 @@
         </li>
       </ul>
       <div class="recommendation__controls">
-        <button class="recomendation__prev-btn">
+        <button type="button" aria-label="Previous slide" class="recomendation__prev-btn">
           <svg width="24" height="24" class="recomendation__btn-icon">
             <use href="./images/icons.svg#icon-arrow-left"></use>
           </svg>
         </button>
-        <button class="recommendation__next-btn">
+        <button type="button" aria-label="Next slide" class="recommendation__next-btn">
           <svg width="24" height="24" class="recomendation__btn-icon">
             <use href="./images/icons.svg#icon-arrow-right"></use>
           </svg>
