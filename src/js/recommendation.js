@@ -48,6 +48,21 @@ const onFilterBtnClick = event => {
     return;
   }
 
+  const prevActiveBtn = document.querySelector(
+    '.recommendation__filter-btn--active'
+  );
+  const currentActiveBtn = event.target;
+
+  prevActiveBtn.classList.replace(
+    'recommendation__filter-btn--active',
+    'recommendation__filter-btn'
+  );
+
+  currentActiveBtn.classList.replace(
+    'recommendation__filter-btn',
+    'recommendation__filter-btn--active'
+  );
+
   slider.slick('unslick');
 
   if (event.target.dataset.filter === 'houses') {

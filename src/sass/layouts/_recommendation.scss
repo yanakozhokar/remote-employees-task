@@ -48,6 +48,14 @@
   }
 }
 
+.recommendation__filter-btn {
+  @extend .btn-filter-secondary;
+}
+
+.recommendation__filter-btn--active {
+  @extend .btn-filter-primary;
+}
+
 .recommendation__filter-icon {
   margin-right: 8px;
 }
@@ -190,7 +198,7 @@
 .recommendation__slider-person-img {
   width: 100%;
   height: 100%;
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .recommendation__slider-person-info {
