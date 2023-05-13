@@ -14,22 +14,6 @@ const apartments = recSliderItemsRef.filter(
 );
 let slider;
 
-const onFilterBtnClick = event => {
-  if (event.target.nodeName !== 'BUTTON') {
-    return;
-  } else if (event.target.dataset.filter === 'houses') {
-    recSliderListRef.innerHTML = houses.map(house => house.outerHTML).join('');
-  } else if (event.target.dataset.filter === 'villas') {
-    recSliderListRef.innerHTML = villas.map(villa => villa.outerHTML).join('');
-  } else if (event.target.dataset.filter === 'apartments') {
-    recSliderListRef.innerHTML = apartments
-      .map(apartment => apartment.outerHTML)
-      .join('');
-  }
-};
-
-recFilterListRef.addEventListener('click', onFilterBtnClick);
-
 const getSlidesAmount = () => {
   if (window.innerWidth < 768) {
     return 1;
@@ -45,41 +29,40 @@ const updateSlider = () => {
   if (slider) {
     slider.slick('slickSetOption', 'slidesToShow', slidesToShow, true);
   }
-
-  const marginLeft =
-    Math.round(
-      (recSliderListRef.clientWidth -
-        recSliderItemsRef[0].clientWidth * slidesToShow) /
-        (slidesToShow - 1)
-    ) + 1;
-
-  recSliderItemsRef.forEach(
-    item => (item.style = `margin-left: ${marginLeft}px;`)
-  );
 };
 
-$(document).ready(() => {
+const initSlider = () => {
   slider = $('.recommendation__slider-list').slick({
     autoplay: true,
     autoplaySpeed: 5000,
     prevArrow: $('.recomendation__prev-btn'),
     nextArrow: $('.recommendation__next-btn'),
     slidesToShow: getSlidesAmount(),
-    variableWidth: true,
   });
 
   window.addEventListener('resize', updateSlider);
-});
+};
 
-const slidesToShow = getSlidesAmount();
+const onFilterBtnClick = event => {
+  if (event.target.nodeName !== 'BUTTON') {
+    return;
+  }
 
-const marginLeft =
-  Math.round(
-    (recSliderListRef.clientWidth -
-      recSliderItemsRef[0].clientWidth * slidesToShow) /
-      (slidesToShow - 1)
-  ) + 1;
+  slider.slick('unslick');
 
-recSliderItemsRef.forEach(
-  item => (item.style = `margin-left: ${marginLeft}px;`)
-);
+  if (event.target.dataset.filter === 'houses') {
+    recSliderListRef.innerHTML = houses.map(house => house.outerHTML).join('');
+  } else if (event.target.dataset.filter === 'villas') {
+    recSliderListRef.innerHTML = villas.map(villa => villa.outerHTML).join('');
+  } else if (event.target.dataset.filter === 'apartments') {
+    recSliderListRef.innerHTML = apartments
+      .map(apartment => apartment.outerHTML)
+      .join('');
+  }
+
+  initSlider();
+};
+
+recFilterListRef.addEventListener('click', onFilterBtnClick);
+
+initSlider();
